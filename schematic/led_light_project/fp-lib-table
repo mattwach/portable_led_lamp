@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "Arduino Pro Mini")(type KiCad)(uri /home/mattwach/git/kicad/libraries/arduino_pro_mini)(options "")(descr ""))
+)

@@ -1,0 +1,164 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L led_light_project-rescue:ARDUINO_PRO_MINI-Arduino_Pro_Mini U3
+U 1 1 610B470B
+P 3300 3600
+F 0 "U3" H 3300 4967 50  0000 C CNN
+F 1 "ARDUINO_PRO_MINI" H 3300 4876 50  0000 C CNN
+F 2 "MODULE_ARDUINO_PRO_MINI" H 3300 3600 50  0001 L BNN
+F 3 "" H 3300 3600 50  0001 L BNN
+F 4 "Manufacturer Recommendations" H 3300 3600 50  0001 L BNN "STANDARD"
+F 5 "N/A" H 3300 3600 50  0001 L BNN "PARTREV"
+F 6 "SparkFun Electronics" H 3300 3600 50  0001 L BNN "MANUFACTURER"
+F 7 "N/A" H 3300 3600 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+	1    3300 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 610B4B88
+P 900 1400
+F 0 "J1" H 1008 1581 50  0000 C CNN
+F 1 "Battery" H 1008 1490 50  0000 C CNN
+F 2 "Connector_Molex:Molex_CLIK-Mate_502382-0270_1x02-1MP_P1.25mm_Vertical" H 900 1400 50  0001 C CNN
+F 3 "~" H 900 1400 50  0001 C CNN
+	1    900  1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 610B5D2B
+P 1400 1400
+F 0 "#PWR?" H 1400 1150 50  0001 C CNN
+F 1 "GND" H 1405 1227 50  0000 C CNN
+F 2 "" H 1400 1400 50  0001 C CNN
+F 3 "" H 1400 1400 50  0001 C CNN
+	1    1400 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 1400 1400 1400
+$Comp
+L power:GND #PWR?
+U 1 1 610B6F31
+P 4150 4700
+F 0 "#PWR?" H 4150 4450 50  0001 C CNN
+F 1 "GND" H 4155 4527 50  0000 C CNN
+F 2 "" H 4150 4700 50  0001 C CNN
+F 3 "" H 4150 4700 50  0001 C CNN
+	1    4150 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4500 4150 4500
+Wire Wire Line
+	4150 4500 4150 4600
+Wire Wire Line
+	4000 4600 4150 4600
+Connection ~ 4150 4600
+Wire Wire Line
+	4150 4600 4150 4700
+Wire Wire Line
+	4000 4700 4150 4700
+Connection ~ 4150 4700
+$Comp
+L Sensor:INA260 U1
+U 1 1 610B91F9
+P 1950 2100
+F 0 "U1" H 1950 2681 50  0000 C CNN
+F 1 "INA260" H 1950 2590 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 1950 1500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ina260.pdf" H 1950 2000 50  0001 C CNN
+	1    1950 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 610BE095
+P 1950 2500
+F 0 "#PWR?" H 1950 2250 50  0001 C CNN
+F 1 "GND" H 1955 2327 50  0000 C CNN
+F 2 "" H 1950 2500 50  0001 C CNN
+F 3 "" H 1950 2500 50  0001 C CNN
+	1    1950 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 2100 2500 2100
+Wire Wire Line
+	2500 2100 2500 3200
+Wire Wire Line
+	2500 3200 2600 3200
+Wire Wire Line
+	2350 2000 2450 2000
+Wire Wire Line
+	2450 2000 2450 3300
+Wire Wire Line
+	2450 3300 2600 3300
+Wire Wire Line
+	1100 1500 1100 1900
+Wire Wire Line
+	1100 2000 1550 2000
+Wire Wire Line
+	1550 1900 1100 1900
+Connection ~ 1100 1900
+Wire Wire Line
+	1100 1900 1100 2000
+$Comp
+L Regulator_Linear:LM2936-3.3_TO92 U2
+U 1 1 610BF61A
+P 1500 3200
+F 0 "U2" H 1500 3442 50  0000 C CNN
+F 1 "LM2936-3.3_TO92" H 1500 3351 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 1500 3425 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2936.pdf" H 1500 3150 50  0001 C CNN
+	1    1500 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 2000 1100 3200
+Wire Wire Line
+	1100 3200 1200 3200
+Connection ~ 1100 2000
+$Comp
+L power:GND #PWR?
+U 1 1 610C22D8
+P 1500 3500
+F 0 "#PWR?" H 1500 3250 50  0001 C CNN
+F 1 "GND" H 1505 3327 50  0000 C CNN
+F 2 "" H 1500 3500 50  0001 C CNN
+F 3 "" H 1500 3500 50  0001 C CNN
+	1    1500 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 3200 1900 3200
+Wire Wire Line
+	1550 2300 1450 2300
+Text Label 1350 2250 0    50   ~ 0
+VBAT
+Text Label 1850 3200 0    50   ~ 0
+V3.3
+Wire Wire Line
+	1950 1700 2250 1700
+Text Label 2100 1700 0    50   ~ 0
+V3.3
+Wire Wire Line
+	4000 2500 4200 2500
+Text Label 4150 2500 0    50   ~ 0
+V3.3
+$EndSCHEMATC
