@@ -1,9 +1,9 @@
 # Portable LED Lamp
 
-*The page (TODO) and pdf file (TODO) contain detailed build instructions, a
-prebuilt firmware (`led_lamp.hex`) file and prerendered `.stl` files.  The rest
-of the instructions on this page to give some quick details on project and to
-explain how to build your own firmware.*
+*The page https://www.instructables.com/Portable-LED-Lamp and [pdf file](Portable-LED-Lamp.pdf)
+contain detailed build instructions, a prebuilt firmware (`led_lamp.hex`) file
+and prerendered `.stl` files.  The rest of the instructions on this page give
+some additional details on the project and to explain how to build your own firmware.*
 
 ![Lamp Image](img/led_lamp.jpg)
 
