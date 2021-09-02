@@ -7,7 +7,7 @@ explain how to build your own firmware.*
 
 ![Lamp Image](img/led_lamp.jpg)
 
-If you nbeed light but don't have an outlet available, it's nice to have an
+If you need light but don't have an outlet available, it's nice to have an
 efficient light that can accept a wide variety of batteries. This page shows a
 way to **build a portable and efficient LED lamp**.
 
