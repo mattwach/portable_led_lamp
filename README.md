@@ -8,10 +8,9 @@ explain how to build your own firmware.*
 ![Lamp Image](img/led_lamp.jpg)
 
 If you need light but don't have an outlet available, it's nice to have an
-efficient light that can accept a wide variety of batteries. This page shows a
-way to **build a portable and efficient LED lamp**.
+efficient light that can accept a wide variety of batteries.
 
-The lamp can accept a wide range of voltages - between 6 and 30V. This allows
+This lamp can accept a wide range of voltages - between 6 and 30V. This allows
 it to be **used with different batteries you may have lying around**, including
 18650 packs, RC batteries, 12V lead acid, etc.
 
