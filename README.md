@@ -1,4 +1,4 @@
-# Emergency LED Lamp
+# Portable LED Lamp
 
 *The page (TODO) and pdf file (TODO) contain detailed build instructions, a
 prebuilt firmware (`led_lamp.hex`) file and prerendered `.stl` files.  The rest
@@ -7,10 +7,9 @@ explain how to build your own firmware.*
 
 ![Lamp Image](img/led_lamp.jpg)
 
-If you suddenly lose power, it's nice to have an efficient light that can
-accept a wide variety of batteries. This page shows a way to **build such an
-emergency LED lamp**. Of course, the lamp could also be used anywhere you want a
-portable ambient light.
+If you nbeed light but don't have an outlet available, it's nice to have an
+efficient light that can accept a wide variety of batteries. This page shows a
+way to **build a portable and efficient LED lamp**.
 
 The lamp can accept a wide range of voltages - between 6 and 30V. This allows
 it to be **used with different batteries you may have lying around**, including
@@ -94,7 +93,7 @@ to work with a few tweaks to the relatively-simple `rules.mak` file.  The main
 issue is likely to be incorrect `avrdude` parameters.  See the main `avrdude`
 documentation for for more information.
 
-# OpenSCAD
+# Enclosure (using OpenSCAD)
 
 The file `3d_print/led_lamp.scad` contains the 3D models.
 
@@ -114,3 +113,9 @@ At the bottom of the file is a section:
 You can place a `*` character or comment out a line with a `//` to omit the
 part.  You can also prefix a line with `!` to only show that part.  This is
 useful for isolating a part for making a `.stl` model for printing.
+
+# Design Notes
+
+In have [design notes](DESIGN_NOTES.md) where I share test results for LED
+efficiency, component power usage and other considerations.
+
